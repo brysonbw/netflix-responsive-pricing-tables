@@ -1,0 +1,104 @@
+/************************** 
+Global selector / CSS reset
+***************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("https://www.phoneworld.com.pk/wp-content/uploads/2020/10/seo-watch-free-link-preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*********
+Topography
+**********/
+
+h2 {
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+p {
+    color: white;
+    text-align: center;
+    padding: 20px 5px;
+}
+
+/*****
+Layout
+******/
+
+.col { /* using float layout instead of grid or flex to show understanding of multiply css layouts */
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.price-box {
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price-box:hover, .price-box.best {
+    box-shadow: - 10px 15px 0 #000;
+}
+
+.price-box .header {
+    background-color: #111;
+    color: #fff;
+    font-size: 25px;
+}
+
+.price-box .header.header-red {
+    background-color:#E50914;
+}
+
+.price-box li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.price-box .emph {
+    background-color: #f4f4f4;
+    font-size: 20px;
+}
+
+/***
+btn
+***/
+
+.button {
+    background-color: #E50914;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/***************************************
+media query - responsive/mobile friendly
+***************************************/
+
+@media (max-width: 700px) {
+    .col {
+        width: 100%; 
+    }
+}
